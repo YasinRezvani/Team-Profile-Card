@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sahel;
-    color: #54677c;
+    
 }
 
 body {
@@ -11,8 +11,11 @@ body {
     min-height: 100vh;
     background-color: #e4e4e4;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    color: #54677c;
+    padding: 40px 16px;
 }
 
 .card {
@@ -26,6 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-radius: 8px;
 }
 
 .card-image {
@@ -42,11 +46,12 @@ body {
 
 .card-image img {
     width: 100%;
-    transform: scale(1.4);
+    transform: scale(1);
+    height: 100%;
 }
 
 .card-name{
-    margin-top: 70px;
+    margin-top: 80px;
     color: #333;
     font-size: 1.4em;
     font-weight: bold;
@@ -60,3 +65,42 @@ p{
     margin-bottom: 12px;
     text-align: center;
 }
+
+.card-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin: 12px 8px;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    transition: opacity 0.4s;
+    
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+button.github{
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #24292e;   
+}
+button.linkedin{
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #0077b5;   
+}
+button.stackoverflow{
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #f48024;   
+}
+
